@@ -7,9 +7,8 @@
 
 #### Project description:
 
-A Python program called the financial calculator project is designed to help users calculate interest and bond repayment for investments.
-
-Using this code, users can perform financial calculations using a user-friendly interface, and it allows them to enter relevant information, such as interest rates, investment amounts, and repayment periods. Depending on the method selected (simple interest or compound interest for investments or bond repayments for loans), the corresponding results are calculated.
+A financial calculator project is created to assist users with calculating interest rates for investments and bond repayments.
+By using this code, users can perform financial calculations with a user-friendly interface and enter relevant data, such as interest rates, investment amounts, and repayment periods, to perform financial calculations. Depending on the method selected (simple interest or compound interest for investments or bond repayments for loans), the corresponding results are calculated.
 
 #### Code description:
 
@@ -22,11 +21,13 @@ Using this code, users can perform financial calculations using a user-friendly 
 4. The `main` function is the entry point of the financial calculator program. It displays a welcome message and prompts the user to choose between an "investment" or "bond"calculation. Based on the user's selection, it prompts for the necessary input values and calls the corresponding function to calculate and display the result.
 
 Main()'s breakdown is as follows:
+
 - It displays a welcome message and prompts the user to select either an "investment" or a "bond" calculation.
 - It enters an infinite loop using `while True`, which allows the user to perform multiple calculations without having to restart the program.
 - Inside the loop, it prompts the user to enter their choice of calculation: "investment" or "bond". The input is converted to lowercase using `.lower()` to handle variations in user input.
 
 - If the user selects "investment", it prompts for the necessary input values:
+
   - The amount of money being deposited (deposit)
   - The number of years for the investment (length_years)
   - The interest rate as a percentage (rate)
@@ -35,6 +36,7 @@ Main()'s breakdown is as follows:
   - If the calculated interest `is not None`, it displays a message with the calculated amount.
 
 - If the user selects "bond", it prompts for the necessary input values:
+
   - The current value of the house (value_house)
   - The interest rate as a percentage (rate_monthly)
   - The number of months to repay the bond (num_months)
